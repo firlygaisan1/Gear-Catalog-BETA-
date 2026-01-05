@@ -132,8 +132,8 @@ SearchButton.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
 SearchButton.BackgroundTransparency = 1.000
 SearchButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SearchButton.BorderSizePixel = 0
-SearchButton.Position = UDim2.new(0.899756372, 0, 0.028070176, 0)
-SearchButton.Size = UDim2.new(0, 43, 0, 35)
+SearchButton.Position = UDim2.new(0.899756372, 0, 0.0280701574, 0)
+SearchButton.Size = UDim2.new(0, 41, 0, 51)
 SearchButton.Image = "rbxassetid://120554268720887"
 
 SearchBox.Name = "SearchBox"
@@ -142,7 +142,8 @@ SearchBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SearchBox.BackgroundTransparency = 1.000
 SearchBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SearchBox.BorderSizePixel = 0
-SearchBox.Size = UDim2.new(0, 374, 0, 58)
+SearchBox.Position = UDim2.new(-3.66797828e-08, 0, 0, 0)
+SearchBox.Size = UDim2.new(0, 374, 0, 80)
 SearchBox.ClearTextOnFocus = false
 SearchBox.Font = Enum.Font.Gotham
 SearchBox.PlaceholderText = "Search the gear.."
@@ -159,8 +160,8 @@ ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
 ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0, 0, 0.20446527, 0)
-ScrollingFrame.Size = UDim2.new(0, 416, 0, 217)
+ScrollingFrame.Position = UDim2.new(0, 0, 0.259209752, 0)
+ScrollingFrame.Size = UDim2.new(0, 416, 0, 202)
 ScrollingFrame.ScrollBarThickness = 15
 
 UIGridLayout.Parent = ScrollingFrame
@@ -240,7 +241,7 @@ UIGradient_3.Parent = Home_2
 
 -- Scripts:
 
-local function KPHWBZ_fake_script() -- Home.LocalScript 
+local function REHU_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -251,15 +252,15 @@ local function KPHWBZ_fake_script() -- Home.LocalScript
 		end
 		end)
 end
-coroutine.wrap(KPHWBZ_fake_script)()
-local function EZAVFY_fake_script() -- Home_2.LocalScript 
+coroutine.wrap(REHU_fake_script)()
+local function XFVMMC_fake_script() -- Home_2.LocalScript 
 	local script = Instance.new('LocalScript', Home_2)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(EZAVFY_fake_script)()
-local function SXOAGNI_fake_script() -- GearCatalog.LocalScript 
+coroutine.wrap(XFVMMC_fake_script)()
+local function JJWK_fake_script() -- GearCatalog.LocalScript 
 	local script = Instance.new('LocalScript', GearCatalog)
 
 	local AvatarEditorService = game:GetService("AvatarEditorService")
@@ -368,4 +369,4 @@ local function SXOAGNI_fake_script() -- GearCatalog.LocalScript
 	startLoad()
 	
 end
-coroutine.wrap(SXOAGNI_fake_script)()
+coroutine.wrap(JJWK_fake_script)()
