@@ -30,8 +30,6 @@ local UICorner_5 = Instance.new("UICorner")
 local TemplateGearImg = Instance.new("ImageLabel")
 local UICorner_6 = Instance.new("UICorner")
 local UIGradient_3 = Instance.new("UIGradient")
-local Frame_2 = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
 
 --Properties:
 
@@ -240,20 +238,9 @@ UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fr
 UIGradient_3.Rotation = -54
 UIGradient_3.Parent = Home_2
 
-Frame_2.Parent = Home_2
-Frame_2.Active = true
-Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_2.BackgroundTransparency = 1.000
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.00240384624, 0, 0.00586639158, 0)
-Frame_2.Size = UDim2.new(0, 364, 0, 48)
-
-UICorner_7.Parent = Frame_2
-
 -- Scripts:
 
-local function FWVQNMU_fake_script() -- Home.LocalScript 
+local function KPHWBZ_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -264,15 +251,15 @@ local function FWVQNMU_fake_script() -- Home.LocalScript
 		end
 		end)
 end
-coroutine.wrap(FWVQNMU_fake_script)()
-local function OTAV_fake_script() -- Home_2.LocalScript 
+coroutine.wrap(KPHWBZ_fake_script)()
+local function EZAVFY_fake_script() -- Home_2.LocalScript 
 	local script = Instance.new('LocalScript', Home_2)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(OTAV_fake_script)()
-local function AXTFBLE_fake_script() -- GearCatalog.LocalScript 
+coroutine.wrap(EZAVFY_fake_script)()
+local function SXOAGNI_fake_script() -- GearCatalog.LocalScript 
 	local script = Instance.new('LocalScript', GearCatalog)
 
 	local AvatarEditorService = game:GetService("AvatarEditorService")
@@ -381,4 +368,4 @@ local function AXTFBLE_fake_script() -- GearCatalog.LocalScript
 	startLoad()
 	
 end
-coroutine.wrap(AXTFBLE_fake_script)()
+coroutine.wrap(SXOAGNI_fake_script)()
