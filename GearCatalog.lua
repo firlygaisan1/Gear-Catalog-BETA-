@@ -174,6 +174,7 @@ ItemTemplate.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ItemTemplate.BorderSizePixel = 0
 ItemTemplate.Position = UDim2.new(0.0437956192, 0, 0.045121409, 0)
 ItemTemplate.Size = UDim2.new(0, 82, 0, 75)
+ItemTemplate.Visible = false
 
 TemplateGearImg.Name = "TemplateGearImg"
 TemplateGearImg.Parent = ItemTemplate
@@ -243,7 +244,7 @@ UIGradient_3.Parent = Home_2
 
 -- Scripts:
 
-local function BSLWV_fake_script() -- GearCatalog.LocalScript 
+local function GTJU_fake_script() -- GearCatalog.LocalScript 
 	local script = Instance.new('LocalScript', GearCatalog)
 
 	local AvatarEditorService = game:GetService("AvatarEditorService")
@@ -352,8 +353,8 @@ local function BSLWV_fake_script() -- GearCatalog.LocalScript
 	startLoad()
 	
 end
-coroutine.wrap(BSLWV_fake_script)()
-local function HDMD_fake_script() -- Home.LocalScript 
+coroutine.wrap(GTJU_fake_script)()
+local function EFSFWM_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -364,12 +365,13 @@ local function HDMD_fake_script() -- Home.LocalScript
 		end
 		end)
 end
-coroutine.wrap(HDMD_fake_script)()
-local function HEVHLSM_fake_script() -- ScrollingFrame.LocalScript 
+coroutine.wrap(EFSFWM_fake_script)()
+local function OCBM_fake_script() -- ScrollingFrame.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	local scrollframe = script.Parent
 	
-	scrollframe.CanvasSize = UDim2.fromOffset(0, 0)
+	scrollframe.CanvasSize = UDim2.fromOffset(200, 0)
+	scrollframe.AutomaticCanvasSize = Enum.AutomaticSize.XY
 end
-coroutine.wrap(HEVHLSM_fake_script)()
+coroutine.wrap(OCBM_fake_script)()
