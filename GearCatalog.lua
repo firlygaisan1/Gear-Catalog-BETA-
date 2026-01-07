@@ -34,6 +34,7 @@ local UIGradient_3 = Instance.new("UIGradient")
 --Properties:
 
 GearCatalog.Name = "GearCatalog"
+GearCatalog.ResetOnSpawn = false
 GearCatalog.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 GearCatalog.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
