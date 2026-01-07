@@ -22,27 +22,27 @@ local SearchBox = Instance.new("TextBox")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local UIGridLayout = Instance.new("UIGridLayout")
 local ItemTemplate = Instance.new("Frame")
-local copygearid = Instance.new("TextButton")
+local TemplateGearImg = Instance.new("ImageLabel")
 local UICorner_4 = Instance.new("UICorner")
-local TemplateName = Instance.new("TextLabel")
 local givegear = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local TemplateGearImg = Instance.new("ImageLabel")
+local TemplateName = Instance.new("TextLabel")
+local copygearid = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local UIGradient_3 = Instance.new("UIGradient")
 
 --Properties:
 
 GearCatalog.Name = "GearCatalog"
-GearCatalog.ResetOnSpawn = false
 GearCatalog.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 GearCatalog.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+GearCatalog.ResetOnSpawn = false
 
 Frame.Parent = GearCatalog
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.177916378, 0, 0.235819295, 0)
+Frame.Position = UDim2.new(-0.000655055046, 0, 0.23581931, 0)
 Frame.Size = UDim2.new(0, 55, 0, 262)
 
 Glitch.Name = "Glitch"
@@ -163,6 +163,7 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0, 0, 0.259209752, 0)
 ScrollingFrame.Size = UDim2.new(0, 416, 0, 202)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2000, 0)
 ScrollingFrame.ScrollBarThickness = 15
 
 UIGridLayout.Parent = ScrollingFrame
@@ -172,41 +173,24 @@ UIGridLayout.CellPadding = UDim2.new(0.25, 5, 0.25, 5)
 ItemTemplate.Name = "ItemTemplate"
 ItemTemplate.Parent = ScrollingFrame
 ItemTemplate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ItemTemplate.BackgroundTransparency = 1.000
 ItemTemplate.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ItemTemplate.BorderSizePixel = 0
 ItemTemplate.Position = UDim2.new(0.0437956192, 0, 0.045121409, 0)
 ItemTemplate.Size = UDim2.new(0, 82, 0, 75)
 ItemTemplate.Visible = false
 
-copygearid.Name = "copygearid"
-copygearid.Parent = ItemTemplate
-copygearid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-copygearid.BorderColor3 = Color3.fromRGB(0, 0, 0)
-copygearid.BorderSizePixel = 0
-copygearid.Position = UDim2.new(0.150000006, 0, 1.21125031, 0)
-copygearid.Size = UDim2.new(0, 70, 0, 19)
-copygearid.Font = Enum.Font.SourceSans
-copygearid.Text = "copy id"
-copygearid.TextColor3 = Color3.fromRGB(0, 0, 0)
-copygearid.TextScaled = true
-copygearid.TextSize = 14.000
-copygearid.TextWrapped = true
+TemplateGearImg.Name = "TemplateGearImg"
+TemplateGearImg.Parent = ItemTemplate
+TemplateGearImg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TemplateGearImg.BackgroundTransparency = 1.000
+TemplateGearImg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TemplateGearImg.BorderSizePixel = 0
+TemplateGearImg.Position = UDim2.new(-0.00999999978, 0, -0.00999999978, 0)
+TemplateGearImg.Size = UDim2.new(0, 99, 0, 99)
+TemplateGearImg.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-UICorner_4.Parent = copygearid
-
-TemplateName.Name = "TemplateName"
-TemplateName.Parent = ItemTemplate
-TemplateName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TemplateName.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TemplateName.BorderSizePixel = 0
-TemplateName.Position = UDim2.new(0, 0, 0.984375298, 0)
-TemplateName.Size = UDim2.new(0, 100, 0, 16)
-TemplateName.Font = Enum.Font.SourceSans
-TemplateName.Text = "Name"
-TemplateName.TextColor3 = Color3.fromRGB(0, 0, 0)
-TemplateName.TextScaled = true
-TemplateName.TextSize = 14.000
-TemplateName.TextWrapped = true
+UICorner_4.Parent = TemplateGearImg
 
 givegear.Name = "givegear"
 givegear.Parent = ItemTemplate
@@ -224,17 +208,35 @@ givegear.TextWrapped = true
 
 UICorner_5.Parent = givegear
 
-TemplateGearImg.Name = "TemplateGearImg"
-TemplateGearImg.Parent = ItemTemplate
-TemplateGearImg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TemplateGearImg.BackgroundTransparency = 1.000
-TemplateGearImg.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TemplateGearImg.BorderSizePixel = 0
-TemplateGearImg.Position = UDim2.new(-0.00999999978, 0, 0, 0)
-TemplateGearImg.Size = UDim2.new(0, 99, 0, 106)
-TemplateGearImg.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+TemplateName.Name = "TemplateName"
+TemplateName.Parent = ItemTemplate
+TemplateName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TemplateName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TemplateName.BorderSizePixel = 0
+TemplateName.Position = UDim2.new(0, 0, 0.984375298, 0)
+TemplateName.Size = UDim2.new(0, 100, 0, 16)
+TemplateName.Font = Enum.Font.SourceSans
+TemplateName.Text = "Name"
+TemplateName.TextColor3 = Color3.fromRGB(0, 0, 0)
+TemplateName.TextScaled = true
+TemplateName.TextSize = 14.000
+TemplateName.TextWrapped = true
 
-UICorner_6.Parent = TemplateGearImg
+copygearid.Name = "copygearid"
+copygearid.Parent = ItemTemplate
+copygearid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+copygearid.BorderColor3 = Color3.fromRGB(0, 0, 0)
+copygearid.BorderSizePixel = 0
+copygearid.Position = UDim2.new(0.150000006, 0, 1.21125031, 0)
+copygearid.Size = UDim2.new(0, 70, 0, 19)
+copygearid.Font = Enum.Font.SourceSans
+copygearid.Text = "copy id"
+copygearid.TextColor3 = Color3.fromRGB(0, 0, 0)
+copygearid.TextScaled = true
+copygearid.TextSize = 14.000
+copygearid.TextWrapped = true
+
+UICorner_6.Parent = copygearid
 
 UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 57, 57)), ColorSequenceKeypoint.new(0.63, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_3.Rotation = -54
@@ -242,26 +244,7 @@ UIGradient_3.Parent = Home_2
 
 -- Scripts:
 
-local function REHU_fake_script() -- Home.LocalScript 
-	local script = Instance.new('LocalScript', Home)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		if script.Parent.Parent.Parent.Home.Visible == true then
-		script.Parent.Parent.Parent["Home"].Visible = false
-		elseif true then
-			script.Parent.Parent.Parent.Home.Visible = true
-		end
-		end)
-end
-coroutine.wrap(REHU_fake_script)()
-local function XFVMMC_fake_script() -- Home_2.LocalScript 
-	local script = Instance.new('LocalScript', Home_2)
-
-	script.Parent.Active = true
-	script.Parent.Draggable = true
-end
-coroutine.wrap(XFVMMC_fake_script)()
-local function JJWK_fake_script() -- GearCatalog.LocalScript 
+local function KLRLFNF_fake_script() -- GearCatalog.LocalScript 
 	local script = Instance.new('LocalScript', GearCatalog)
 
 	local AvatarEditorService = game:GetService("AvatarEditorService")
@@ -370,4 +353,23 @@ local function JJWK_fake_script() -- GearCatalog.LocalScript
 	startLoad()
 	
 end
-coroutine.wrap(JJWK_fake_script)()
+coroutine.wrap(KLRLFNF_fake_script)()
+local function RCYQJ_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Parent.Parent.Home.Visible == true then
+		script.Parent.Parent.Parent["Home"].Visible = false
+		elseif true then
+			script.Parent.Parent.Parent.Home.Visible = true
+		end
+		end)
+end
+coroutine.wrap(RCYQJ_fake_script)()
+local function KZJGQA_fake_script() -- Home_2.LocalScript 
+	local script = Instance.new('LocalScript', Home_2)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(KZJGQA_fake_script)()
