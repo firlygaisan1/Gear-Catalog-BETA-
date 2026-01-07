@@ -168,7 +168,7 @@ ScrollingFrame.ScrollBarThickness = 15
 
 UIGridLayout.Parent = ScrollingFrame
 UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIGridLayout.CellPadding = UDim2.new(0.25, 5, 0.25, 5)
+UIGridLayout.CellPadding = UDim2.new(0.150000006, 5, 0.200000003, 5)
 
 ItemTemplate.Name = "ItemTemplate"
 ItemTemplate.Parent = ScrollingFrame
@@ -244,7 +244,7 @@ UIGradient_3.Parent = Home_2
 
 -- Scripts:
 
-local function KLRLFNF_fake_script() -- GearCatalog.LocalScript 
+local function TMTVY_fake_script() -- GearCatalog.LocalScript 
 	local script = Instance.new('LocalScript', GearCatalog)
 
 	local AvatarEditorService = game:GetService("AvatarEditorService")
@@ -353,8 +353,8 @@ local function KLRLFNF_fake_script() -- GearCatalog.LocalScript
 	startLoad()
 	
 end
-coroutine.wrap(KLRLFNF_fake_script)()
-local function RCYQJ_fake_script() -- Home.LocalScript 
+coroutine.wrap(TMTVY_fake_script)()
+local function AHJYZ_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -365,11 +365,4 @@ local function RCYQJ_fake_script() -- Home.LocalScript
 		end
 		end)
 end
-coroutine.wrap(RCYQJ_fake_script)()
-local function KZJGQA_fake_script() -- Home_2.LocalScript 
-	local script = Instance.new('LocalScript', Home_2)
-
-	script.Parent.Active = true
-	script.Parent.Draggable = true
-end
-coroutine.wrap(KZJGQA_fake_script)()
+coroutine.wrap(AHJYZ_fake_script)()
