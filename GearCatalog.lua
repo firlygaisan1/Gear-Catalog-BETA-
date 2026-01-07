@@ -20,7 +20,6 @@ local UICorner_3 = Instance.new("UICorner")
 local SearchButton = Instance.new("ImageButton")
 local SearchBox = Instance.new("TextBox")
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local UIGridLayout = Instance.new("UIGridLayout")
 local ItemTemplate = Instance.new("Frame")
 local TemplateGearImg = Instance.new("ImageLabel")
 local UICorner_4 = Instance.new("UICorner")
@@ -29,6 +28,7 @@ local UICorner_5 = Instance.new("UICorner")
 local TemplateName = Instance.new("TextLabel")
 local copygearid = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local UIGridLayout = Instance.new("UIGridLayout")
 local UIGradient_3 = Instance.new("UIGradient")
 
 --Properties:
@@ -103,7 +103,7 @@ Home_2.Active = true
 Home_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 Home_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Home_2.BorderSizePixel = 0
-Home_2.Position = UDim2.new(0.268230945, 0, 0.23581931, 0)
+Home_2.Position = UDim2.new(0.267114878, 0, 0.23581931, 0)
 Home_2.Size = UDim2.new(0, 416, 0, 274)
 
 TextLabel.Parent = Home_2
@@ -163,12 +163,8 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0, 0, 0.259209752, 0)
 ScrollingFrame.Size = UDim2.new(0, 416, 0, 202)
-ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2000, 0)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 200, 0)
 ScrollingFrame.ScrollBarThickness = 15
-
-UIGridLayout.Parent = ScrollingFrame
-UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIGridLayout.CellPadding = UDim2.new(0.150000006, 5, 0.200000003, 5)
 
 ItemTemplate.Name = "ItemTemplate"
 ItemTemplate.Parent = ScrollingFrame
@@ -178,7 +174,6 @@ ItemTemplate.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ItemTemplate.BorderSizePixel = 0
 ItemTemplate.Position = UDim2.new(0.0437956192, 0, 0.045121409, 0)
 ItemTemplate.Size = UDim2.new(0, 82, 0, 75)
-ItemTemplate.Visible = false
 
 TemplateGearImg.Name = "TemplateGearImg"
 TemplateGearImg.Parent = ItemTemplate
@@ -238,13 +233,17 @@ copygearid.TextWrapped = true
 
 UICorner_6.Parent = copygearid
 
+UIGridLayout.Parent = ScrollingFrame
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, 80, 0, 80)
+
 UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 57, 57)), ColorSequenceKeypoint.new(0.63, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_3.Rotation = -54
 UIGradient_3.Parent = Home_2
 
 -- Scripts:
 
-local function TMTVY_fake_script() -- GearCatalog.LocalScript 
+local function RHLKXJ_fake_script() -- GearCatalog.LocalScript 
 	local script = Instance.new('LocalScript', GearCatalog)
 
 	local AvatarEditorService = game:GetService("AvatarEditorService")
@@ -267,7 +266,7 @@ local function TMTVY_fake_script() -- GearCatalog.LocalScript
 		local params = CatalogSearchParams.new()
 		params.AssetTypes = { Enum.AvatarAssetType.Gear }
 		params.IncludeOffSale = true
-		params.Limit = 30
+		params.Limit = 10
 		params.SearchKeyword = keyword or ""
 		return params
 	end
@@ -353,8 +352,8 @@ local function TMTVY_fake_script() -- GearCatalog.LocalScript
 	startLoad()
 	
 end
-coroutine.wrap(TMTVY_fake_script)()
-local function AHJYZ_fake_script() -- Home.LocalScript 
+coroutine.wrap(RHLKXJ_fake_script)()
+local function RITY_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -365,4 +364,4 @@ local function AHJYZ_fake_script() -- Home.LocalScript
 		end
 		end)
 end
-coroutine.wrap(AHJYZ_fake_script)()
+coroutine.wrap(RITY_fake_script)()
