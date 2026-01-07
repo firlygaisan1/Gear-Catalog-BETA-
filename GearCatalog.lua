@@ -244,7 +244,7 @@ UIGradient_3.Parent = Home_2
 
 -- Scripts:
 
-local function GTJU_fake_script() -- GearCatalog.LocalScript 
+local function IIAHI_fake_script() -- GearCatalog.LocalScript 
 	local script = Instance.new('LocalScript', GearCatalog)
 
 	local AvatarEditorService = game:GetService("AvatarEditorService")
@@ -353,8 +353,8 @@ local function GTJU_fake_script() -- GearCatalog.LocalScript
 	startLoad()
 	
 end
-coroutine.wrap(GTJU_fake_script)()
-local function EFSFWM_fake_script() -- Home.LocalScript 
+coroutine.wrap(IIAHI_fake_script)()
+local function KCZYDGG_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -365,13 +365,12 @@ local function EFSFWM_fake_script() -- Home.LocalScript
 		end
 		end)
 end
-coroutine.wrap(EFSFWM_fake_script)()
-local function OCBM_fake_script() -- ScrollingFrame.LocalScript 
+coroutine.wrap(KCZYDGG_fake_script)()
+local function XDVB_fake_script() -- ScrollingFrame.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	local scrollframe = script.Parent
 	
-	scrollframe.CanvasSize = UDim2.fromOffset(200, 0)
 	scrollframe.AutomaticCanvasSize = Enum.AutomaticSize.XY
 end
-coroutine.wrap(OCBM_fake_script)()
+coroutine.wrap(XDVB_fake_script)()
