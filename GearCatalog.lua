@@ -163,7 +163,7 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0, 0, 0.259209752, 0)
 ScrollingFrame.Size = UDim2.new(0, 416, 0, 202)
-ScrollingFrame.CanvasSize = UDim2.new(0, 0, 200, 0)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2000, 0)
 ScrollingFrame.ScrollBarThickness = 15
 
 ItemTemplate.Name = "ItemTemplate"
@@ -243,7 +243,7 @@ UIGradient_3.Parent = Home_2
 
 -- Scripts:
 
-local function RHLKXJ_fake_script() -- GearCatalog.LocalScript 
+local function BSLWV_fake_script() -- GearCatalog.LocalScript 
 	local script = Instance.new('LocalScript', GearCatalog)
 
 	local AvatarEditorService = game:GetService("AvatarEditorService")
@@ -266,7 +266,7 @@ local function RHLKXJ_fake_script() -- GearCatalog.LocalScript
 		local params = CatalogSearchParams.new()
 		params.AssetTypes = { Enum.AvatarAssetType.Gear }
 		params.IncludeOffSale = true
-		params.Limit = 10
+		params.Limit = 30
 		params.SearchKeyword = keyword or ""
 		return params
 	end
@@ -305,7 +305,7 @@ local function RHLKXJ_fake_script() -- GearCatalog.LocalScript
 				end
 	
 				clone.copygearid.MouseButton1Click:Connect(function()
-					setclipboard(tostring(id))
+					print(tostring(id))
 				end)
 	
 				clone.givegear.MouseButton1Click:Connect(function()
@@ -352,8 +352,8 @@ local function RHLKXJ_fake_script() -- GearCatalog.LocalScript
 	startLoad()
 	
 end
-coroutine.wrap(RHLKXJ_fake_script)()
-local function RITY_fake_script() -- Home.LocalScript 
+coroutine.wrap(BSLWV_fake_script)()
+local function HDMD_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -364,4 +364,12 @@ local function RITY_fake_script() -- Home.LocalScript
 		end
 		end)
 end
-coroutine.wrap(RITY_fake_script)()
+coroutine.wrap(HDMD_fake_script)()
+local function HEVHLSM_fake_script() -- ScrollingFrame.LocalScript 
+	local script = Instance.new('LocalScript', ScrollingFrame)
+
+	local scrollframe = script.Parent
+	
+	scrollframe.CanvasSize = UDim2.fromOffset(0, 0)
+end
+coroutine.wrap(HEVHLSM_fake_script)()
